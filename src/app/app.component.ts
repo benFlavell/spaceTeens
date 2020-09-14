@@ -7,13 +7,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'spaceTeens0.1.1';
+  title = 'spaceTeens0.1.2';
 
   constructor(private router: Router) {
     let path = localStorage.getItem('path');
-    console.log(path);
+    console.log("constructor path:" + path);
     if (path) {
-      console.log(path);
+      console.log("constructor pathin if:" + path);
       localStorage.removeItem('path');
       this.router.navigate([path]);
     }
