@@ -1,6 +1,6 @@
 <script>
     const path = window.location.pathname.slice(1);
+    path = path.substring(path.indexOf("/") + 1)
     localStorage.setItem('path', path);
-    console.log(path);
     window.location.href='/spaceTeens/';
 </script>
