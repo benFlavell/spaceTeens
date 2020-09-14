@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'spaceTeens0.1.2';
+  title = 'spaceTeens0.1.3';
 
   constructor(private router: Router) {
     let path = localStorage.getItem('path');
