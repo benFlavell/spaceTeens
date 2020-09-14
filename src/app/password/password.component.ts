@@ -47,8 +47,8 @@ export class PasswordComponent implements OnInit {
   }
 
   matches(string1: String, string2: String) {
-    string1 = string1.replace(/[^a-zA-Z0-9 ]/g, "").toLowerCase();
-    string2 = string2.replace(/[^a-zA-Z0-9 ]/g, "").toLowerCase();
+    string1 = string1.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+    string2 = string2.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
     return string1 === string2;
   }
 }
