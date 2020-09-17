@@ -2,19 +2,24 @@
 'use strict';
 
 export const questions = {
-    'yellow': {
-        'question': "What was the yellow pun name we came up with?",
-        'answer': "bananakin skywalker",
+    '1': {
+        'question': "how old is yoda when he finally succumbs to the force?",
+        'answers': ["900", "nine hundred"],
         'number': "4"
     },
-    'blue': {
-        'question': "What was the blue pun name we came up with?",
-        'answer': "bluebacca",
+    '2': {
+        'question': "who is the only non-jedi in the original star wards trilogy to use a lightsaber? ",
+        'answers': ["han solo"],
         'number': "1"
     },
-    'red': {
-        'question': "What was the red pun name we came up with?",
-        'answer': "jar jar pink",
+    '3': {
+        'question': "what sort of business did luke's uncle owen run?",
+        'answers': ["moisture farm", "moisture farmer"],
         'number': "1"
+    },
+    '4': {
+        'question': "what creature lives in the garbage compactor of the original death star?",
+        'answers': ["dianoga"],
+        'number': "behind the door"
     }
 };

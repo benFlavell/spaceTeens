@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-home',
   template: `
     <div class="container">
-      <h2>Welcome to Space Teens. Add your team colour to the url to get to your question!</h2>
+      <h2>Welcome to Space Teens. Add your question number to the url to get to your question!</h2>
     </div>
   `,
   styles: [

@@ -10,7 +10,7 @@ import * as globalQuestions from '../globalQuestions';
 
 export class PasswordComponent implements OnInit {
   question: String;
-  answer: String;
+  answers: String[];
   number: String;
   
   inputText: String = "";
@@ -24,7 +24,7 @@ export class PasswordComponent implements OnInit {
     let questionDetails = globalQuestions.questions[questionCode];
     if (questionDetails != undefined) {
       this.question = questionDetails.question;
-      this.answer = questionDetails.answer;
+      this.answers = questionDetails.answers;
       this.number = questionDetails.number;
     } else {
       this.question = "There is no question here";
@@ -39,9 +39,14 @@ export class PasswordComponent implements OnInit {
   }
 
   checkAnswer() {
-    if (this.matches(this.inputText, this.answer)) {
-      this.correctAnswer = true;
-    } else {
+    let foundAnswer = false;
+    for (let answer of this.answers) {
+      if (this.matches(this.inputText, answer)) {
+        foundAnswer = true;
+        this.correctAnswer = true;
+      }
+    }
+    if (!foundAnswer) {
       this.wrongAnswer = true;
     }
   }

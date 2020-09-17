@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'starjedi';
+    src: url('assets/fonts/StarJedi.woff2') format('woff2'),
+        url('assets/fonts/StarJedi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'starjedi', sans-serif;
+}
