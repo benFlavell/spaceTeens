@@ -25,6 +25,6 @@ export const questions = {
     'bonus': {
         'question': "where was luke going into?",
         'answers': ["tosche station"],
-        'number': "https://www.youtube.com/watch?v=DhkgohG9lTM"
+        'number': "https://youtu.be/QM0BUgCL2vY"
     }
 };
