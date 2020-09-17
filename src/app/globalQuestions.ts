@@ -21,5 +21,10 @@ export const questions = {
         'question': "what creature lives in the garbage compactor of the original death star?",
         'answers': ["dianoga"],
         'number': "behind the door"
+    },
+    'bonus': {
+        'question': "where was luke going into?",
+        'answers': ["tosche station"],
+        'number': "https://www.youtube.com/watch?v=DhkgohG9lTM"
     }
 };
